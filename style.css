@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.7;
+}
+
+/* Navbar */
+
+nav{
+    background:#0f172a;
+    padding:18px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* Hero Section */
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+}
+
+.hero h1{
+    margin-top:20px;
+    font-size:42px;
+}
+
+.hero h3{
+    margin-top:10px;
+    color:#93c5fd;
+}
+
+.hero p{
+    max-width:700px;
+    margin:15px auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:white;
+    color:#0f172a;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* Sections */
+
+section{
+    width:85%;
+    margin:auto;
+    padding:50px 0;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0f172a;
+    font-size:32px;
+}
+
+/* Cards */
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+/* Skills */
+
+.skills{
+    text-align:center;
+}
+
+.skills span{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:10px 18px;
+    margin:8px;
+    border-radius:25px;
+    font-size:14px;
+}
+
+/* Contact */
+
+#contact a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+/* Footer */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    section{
+        width:95%;
+    }
+
+    .hero img{
+        width:140px;
+        height:140px;
+    }
+}
